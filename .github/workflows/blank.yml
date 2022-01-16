@@ -25,7 +25,6 @@ jobs:
         copy files.zip D:\a\files.zip
 
         Expand-Archive -Path D:\a\files.zip -DestinationPath D:\a\
-        Expand-Archive -Path D:\a\webview.cab -DestinationPath D:\a\
 
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
       env:
